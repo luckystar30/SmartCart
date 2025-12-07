@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/luckystar30/SmartCart/main/SmartCart_Banner.png" 
+       width="100%" 
+       alt="SmartCart – Personalized E-Commerce Recommendations"/>
+</p>
+
 🛒 **SmartCart – Personalized E-Commerce Recommendation Engine**
 
 **AI-powered product recommendations + LLM-generated promo messages + interactive Streamlit dashboard**
@@ -151,18 +157,17 @@ Python
 SmartCart/
 │
 ├── app/
-│   └── app.py                     # Main Streamlit UI
+│   └── app.py                       # Main Streamlit UI
 │
 ├── data/
 │   └── final_recommendations_with_promos.csv
 │
-├── notebooks/                     # EDA, RFM, CF, embeddings
+├── notebooks/                       # EDA, RFM, CF models, embeddings
 │
 ├── fix_headers.py
 ├── requirements.txt
-├── SmartCart_Desc.docx            # Full project documentation
-├── PLAN.docx
-└── .gitignore
+├── .gitignore
+└── SmartCart_Banner.png             # README banner image
 
 🚀 **Run Locally**
 
