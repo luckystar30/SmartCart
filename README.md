@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/jneJ6aE.png" width="100%" alt="SmartCart Banner"/>
+  <img src="BANNER_URL_HERE" width="100%" alt="SmartCart Banner"/>
 </p>
 
 <p align="center">
