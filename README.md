@@ -65,19 +65,47 @@ This hybrid design improves personalization, enhances product discovery, and sup
 
 SmartCart merges two intelligence layers:
 
-**Component**	                    **Purpose**
-Collaborative Filtering (CF)	Learns interactions between users + items
-Semantic Embeddings	            Understands product descriptions with LLM embeddings
-Hybrid Score	                Combines both for highly accurate recommendations
+| **Component**                    |               **Purpose**                                 |
+|--------------------------------- |-----------------------------------------------------------|
+| **Collaborative Filtering (CF)** | Learns interactions between users and items               |
+| **Semantic Embeddings**          | Understands product descriptions using LLM embeddings     |
+| **Hybrid Score**                 | Combines both signals for highly accurate recommendations |
+
 
 This results in a **~30% improvement** over using CF alone.
 
 🏗️ **Architecture**
-Transaction Data → Cleaning → CF Model
-                     ↘
-      Product Descriptions → Embeddings → Hybrid Engine
-                                              ↓
-                                     Streamlit App → User
+
+                ┌───────────────────────────┐
+                │     Transaction Data       │
+                └──────────────┬────────────┘
+                               │
+                    ┌──────────▼──────────┐
+                    │    Preprocessing     │
+                    └──────────┬──────────┘
+                               │
+        ┌──────────────────────┼──────────────────────┐
+        │                      │                      │
+┌───────▼────────┐   ┌────────▼────────┐   ┌─────────▼─────────┐
+│ Collaborative   │   │ Embedding Model │   │ RFM + Clustering  │
+│ Filtering (CF)  │   │ (LLM Embeddings)│   │ (User Segments)   │
+└───────┬────────┘   └────────┬────────┘   └─────────┬─────────┘
+        │                      │                      │
+        └──────────────┬──────┴──────────────┬───────┘
+                       ▼                     ▼
+                ┌─────────────────────────────────────┐
+                │       Hybrid Scoring Engine         │
+                └──────────────────┬──────────────────┘
+                                   │
+                        ┌──────────▼─────────┐
+                        │    Streamlit UI     │
+                        └──────────┬─────────┘
+                                   │
+                        ┌──────────▼─────────┐
+                        │  Recommendations    │
+                        │  Promo Messages     │
+                        └─────────────────────┘
+
 
 🧰 **Tech Stack**
 
@@ -173,4 +201,3 @@ Feel free to fork, open issues, or submit pull requests.
 📄 **License**
 
 MIT License (recommended)
-
