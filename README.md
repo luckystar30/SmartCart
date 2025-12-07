@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/luckystar30/SmartCart/main/SmartCart_Banner.png" 
-       width="100%" 
+<p align="center" style="margin-bottom:-12px;">
+  <img src="https://raw.githubusercontent.com/luckystar30/SmartCart/main/SmartCart_Banner.png"
+       width="100%"
        alt="SmartCart – Personalized E-Commerce Recommendations"/>
 </p>
 
@@ -84,9 +84,9 @@ SmartCart merges two intelligence layers:
 SmartCart merges two intelligence layers:
 
 | **Component**                    |               **Purpose**                                 |
-|--------------------------------- |-----------------------------------------------------------|
-| **Collaborative Filtering (CF)** | Learns interactions between users and items               |
-| **Semantic Embeddings**          | Understands product descriptions using LLM embeddings     |
+|--------------------------------- |----------------------------------------------------|
+| **Collaborative Filtering (CF)** | Learns interactions between users and items |
+| **Semantic Embeddings**          | Understands product descriptions using LLM embeddings |
 | **Hybrid Score**                 | Combines both signals for highly accurate recommendations |
 
 
@@ -232,5 +232,4 @@ Feel free to fork, open issues, or submit pull requests.
 
 📄 **License**
 
-MIT License
-
+MIT License (recommended)
