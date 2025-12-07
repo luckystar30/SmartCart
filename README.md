@@ -4,6 +4,16 @@
        alt="SmartCart – Personalized E-Commerce Recommendations"/>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9%2B-blue?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Framework-Streamlit-FF4B4B?logo=streamlit&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Live%20App%20✔-brightgreen" />
+  <a href="https://smartcart-dkkyrbzvk6pbc2q5qxjhjs.streamlit.app/">
+    <img src="https://img.shields.io/badge/Streamlit-App%20Running-red?logo=streamlit" />
+  </a>
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+</p>
+
 🛒 **SmartCart – Personalized E-Commerce Recommendation Engine**
 
 **AI-powered product recommendations + LLM-generated promo messages + interactive Streamlit dashboard**
@@ -222,4 +232,5 @@ Feel free to fork, open issues, or submit pull requests.
 
 📄 **License**
 
-MIT License (recommended)
+MIT License
+
