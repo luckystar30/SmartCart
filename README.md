@@ -154,6 +154,7 @@ Python
 
 📂 **Project Structure**
 
+```bash
 SmartCart/
 │
 ├── app/
@@ -168,6 +169,7 @@ SmartCart/
 ├── requirements.txt
 ├── .gitignore
 └── SmartCart_Banner.png             # README banner image
+```
 
 🚀 **Run Locally**
 
